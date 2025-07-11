@@ -1,0 +1,80 @@
+/* General page layout */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-size: 2.5rem;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+button {
+    padding: 12px 28px;
+    margin: 0 10px 20px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+#reset {
+    background: #e67e22;
+}
+
+#reset:hover {
+    background: #ca6c1d;
+}
+
+select {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    background: #fff;
+    color: #333;
+}
+
+/* Placeholder for winner and loser styles */
+.winner {
+    color: green;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #b6ffb6;
+}
+
+.loser {
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #ffb6b6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    button, select {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+} 
